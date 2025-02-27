@@ -5,7 +5,7 @@ import { AppContextProvider } from './context/AppContext.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import {ClerkProvider} from '@clerk/clerk-react'
 
-const PUBLISHABLE_KEY = pk_test_cHJlY2lvdXMtc2F3ZmlzaC0wLmNsZXJrLmFjY291bnRzLmRldiQ
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
 if (!PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
